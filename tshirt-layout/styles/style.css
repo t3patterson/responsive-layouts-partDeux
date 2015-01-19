@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 1px solid rgba(125,0,0,.15);
+}
+
+
+
+main{
+  padding: 1.0rem;
+}
+
+section{
+  border: 2px solid rgba(58,113,209,1);
+  max-width: 22rem;
+  margin: 1.0rem auto;
+}
+
+  .product{
+    position: relative;
+    height: 20rem;
+    text-align: center;
+  } 
+    .product .rotate-box{
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-left: 2px solid rgba(58,113,209,1);
+      border-bottom: 2px solid rgba(58,113,209,1);
+
+      padding: .33rem .75rem;
+      cursor: pointer;
+
+    }
+
+    .product img.front {
+      height: 100%;
+    }
+
+    .product img.back{
+      height: 100%;
+      display: none;
+    }
+
+  ul.actions-menu {
+    list-style-type: none;
+    font-size: 0;
+    padding: 0;     /*normalize.css has default left-padding*/
+    text-align: center;
+  }
+
+  ul.actions-menu li {
+    display: inline-block;
+    vertical-align: top;  /*necessary for lining up boxes-- boxes are center aligned by default*/
+    width: 20%;
+    padding: 1.5rem;
+    font-size: medium;
+    border: 2px solid rgba(58,113,209,1);
+    border-bottom: none;
+    border-left: none;
+  }
+
+  ul.actions-menu li:last-child{
+    border-right: none;
+  }
+

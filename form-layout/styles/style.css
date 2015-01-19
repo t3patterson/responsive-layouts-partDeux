@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  outline: 1px solid rgba(200,200,200,.3);
+}
+
+body{
+  background: rgba(117,164,232,1);
+  color: rgba(255,255,255,1);
+  font-family: 'Helvetica Neue';
+  font-size: .85rem;
+  font-weight: 400;
+  letter-spacing: .02rem;
+}
+
+section{
+  width: 100%;
+  transition: width .5s;
+}
+
+label{
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: .2rem;
+}
+
+.data-field{
+  margin-bottom: 1.25rem;
+}
+
+select{
+  width: 80%;
+  padding: .5rem;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: .5rem;
+  border: 2px solid rgba(255,255,255,1);
+  background: rgba(255,255,255,0);
+  color: rgba(255,255,255,1);
+  font-weight: 500;
+  transition: border .5s;
+}
+  input:focus,
+  textarea:focus{
+    border: 2px solid rgba(35,67,150,1) ;
+  }
+    
+    input::-webkit-input-placeholder
+    {  
+     color: rgba(35,67,150,.7);  
+    }
+
+textarea{
+  height: 7rem;
+}
+
+@media screen and (min-width: 600px){
+  
+  main {
+    font-size: 0;
+  }
+
+  section {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 900px){
+  
+  main {
+    font-size: 0;
+  }
+
+  section {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    font-size: medium;
+  }
+}

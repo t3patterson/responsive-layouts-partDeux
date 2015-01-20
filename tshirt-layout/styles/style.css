@@ -4,7 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 1px solid rgba(125,0,0,.15);
+  
 }
 
 .grid {
@@ -64,8 +64,12 @@ section{
       transition: color .25s;
       
     }
+    .product .rotate-box i.fa{
+      transform: rotate(0);
+      transition: transform 1s;}
 
     .product .rotate-box:hover i.fa{
+      transform: rotate(-540deg);
       color: rgba(58,113,209,.3);
     }
     
@@ -182,8 +186,8 @@ section{
       }
 
       .swatch{
-      margin: 0 0 .2rem;
-      width: 47%;
+      margin: 0 1% 4%;
+      width: 46%;
       }
 
         .swatch:nth-child(1) {
@@ -193,7 +197,7 @@ section{
         .swatch:nth-child(4) {background: blue;}
 
 @media screen and (min-width: 700px){
-  .grid-2 > * {width: 46%;}
+  .grid-2 > * {width: 46%; transition: all .25s ease;}
   section{margin: 0 1% 2% 1%;}
 }
 

@@ -9,7 +9,7 @@
 
 .grid {
   font-size: 0;
-  text-align: justify;
+  text-align: center;
   position: relative;
 }
 
@@ -21,7 +21,6 @@
 
 .grid > * {
     display: inline-block;
-    width: 46%;
     text-align: center; /* reset the text-alignment */
     font-size: medium; /* reset the font size */
     vertical-align: top;
@@ -36,12 +35,14 @@
 
 main{
   padding: 1.0rem;
+  margin: 0 auto;
 }
 
 section{
   border: 2px solid rgba(58,113,209,1);
   max-width: 22rem;
   margin: 1.0rem auto;
+  width: 100%;
 }
 
   .product{
@@ -139,7 +140,6 @@ section{
   /* shirt-size li */
     ul.actions-menu li.shirt-size{
         position: relative;
-
     }
 
       ul.actions-menu li.shirt-size:hover > .all-sizes,
@@ -183,11 +183,23 @@ section{
 
       .swatch{
       margin: 0 0 .2rem;
+      width: 47%;
       }
 
         .swatch:nth-child(1) {
           background: red;}
         .swatch:nth-child(2) {background: green;}
-        .swatch:nth-child(3) {background: violet;}
+        .swatch:nth-child(3) {background: maroon;}
         .swatch:nth-child(4) {background: blue;}
+
+@media screen and (min-width: 700px){
+  .grid-2 > * {width: 46%;}
+  section{margin: 0 1% 2% 1%;}
+}
+
+@media screen and (min-width: 1040px){
+  .grid-2 > * {width: 31%;}
+  section{margin: 0 1% 2% 1%;}
+}
+
 

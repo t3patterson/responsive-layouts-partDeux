@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Responsive Product Display</title>
     <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css"></link>
+    <link rel="stylesheet" href="./bower_components/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/style.css"></link>
 </head>
 
@@ -13,16 +14,30 @@
         <main>
             <section class="tshirt">
                 <div class="product">
-                    <div class="rotate-box">X</div>
+                    <div class="rotate-box"><i class="fa fa-undo"></i></div>
                     <img class="front" src="./images/tshirt1-front.png" alt="tshirt1">
                     <img class="back" src="./images/tshirt1-back.png" alt="tshirt1">
                 </div>
                 <ul class="actions-menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
+                    <li><i class="fa fa-arrows-h"></i></li>
+                    <li><i class="fa fa-heart-o"></i></li>
+                    <li class="shirt-size">XL
+                      <div class="all-sizes">
+                        <div class="shirt"></div>
+                        <div class="shirt"></div>
+                        <div class="shirt"></div>
+                        <div class="shirt"></div>
+                      </div>
+                    </li>
+                    <li class="color-swap"><i class="fa fa-square"></i>
+                      <div class="swatches grid squarify">
+                        <div class="swatch"></div>
+                        <div class="swatch"></div>
+                        <div class="swatch"></div>
+                        <div class="swatch"></div>
+                      </div>
+                    </li>
+                    <li><i class="fa fa-shopping-cart"></i></li>
                 </ul>
             </section>
 

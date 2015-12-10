@@ -24,7 +24,7 @@
     text-align: center; /* reset the text-alignment */
     font-size: medium; /* reset the font size */
     vertical-align: top;
-    transition: all .25s ease; /* optional, but cool */
+    transition: all .1s ; /* optional, but cool */
 }
 
 .squarify > *::after{
@@ -65,11 +65,11 @@ section{
       
     }
     .product .rotate-box i.fa{
-      transform: rotate(0);
-      transition: transform 1s;}
+      transform: rotate(0deg);
+      transition: transform .2s;}
 
     .product .rotate-box:hover i.fa{
-      transform: rotate(-540deg);
+      transform: rotate(-180deg);
       color: rgba(58,113,209,.3);
     }
     
@@ -133,7 +133,7 @@ section{
     ul.actions-menu i.fa {
       background: rgba(255,255,255,1);
       color: rgba(58,113,209,1);
-      transition: background .8s, color .8s;
+      transition: background .2s, color .2s;
     }
       ul.actions-menu li:hover,
       ul.actions-menu li:hover > i.fa {
@@ -160,7 +160,7 @@ section{
         border: 2px solid black;
         padding: .4rem;
         opacity: 0;
-        transition: opacity .8s;
+        transition: opacity .1s;
     }
 
 
@@ -182,7 +182,7 @@ section{
         border: 2px solid black;
         padding: .4rem;
         opacity: 0;
-        transition: opacity .8s;
+        transition: opacity .2s;
       }
 
       .swatch{
@@ -190,14 +190,13 @@ section{
       width: 46%;
       }
 
-        .swatch:nth-child(1) {
-          background: red;}
-        .swatch:nth-child(2) {background: green;}
-        .swatch:nth-child(3) {background: maroon;}
-        .swatch:nth-child(4) {background: blue;}
+        .swatch:nth-child(1) {background: #e74c3c;}
+        .swatch:nth-child(2) {background: #9b59b6;}
+        .swatch:nth-child(3) {background: #f1c40f;}
+        .swatch:nth-child(4) {background: #3498db;}
 
 @media screen and (min-width: 700px){
-  .grid-2 > * {width: 46%; transition: all .25s ease;}
+  .grid-2 > * {width: 46%; transition: all .1s ease;}
   section{margin: 0 1% 2% 1%;}
 }
 

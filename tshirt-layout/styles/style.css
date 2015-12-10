@@ -133,14 +133,18 @@ section{
     ul.actions-menu i.fa {
       background: rgba(255,255,255,1);
       color: rgba(58,113,209,1);
-      transition: background .2s, color .2s;
     }
-      ul.actions-menu li:hover,
-      ul.actions-menu li:hover > i.fa {
+
+     ul.actions-menu li .shirt {
+      padding: 3px 0;
+      font-size: 18px;
+    } 
+     
+      ul.actions-menu li .shirt:hover {
       color: rgba(255,255,255,1);
       background: rgba(58,113,209,1);
-    }
-  
+    } 
+
   /* shirt-size li */
     ul.actions-menu li.shirt-size{
         position: relative;
@@ -150,6 +154,7 @@ section{
        ul.actions-menu li.color-swap:hover > .swatches{
         opacity: 1.0;
       }
+
     ul.actions-menu li.shirt-size .all-sizes {
         position: absolute;
         bottom: 110%;

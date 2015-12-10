@@ -130,7 +130,7 @@ section{
   }
 
     ul.actions-menu li,
-    ul.actions-menu i.fa {
+    ul.actions-menu li .shirt {
       background: rgba(255,255,255,1);
       color: rgba(58,113,209,1);
     }
@@ -140,6 +140,7 @@ section{
       font-size: 18px;
     } 
      
+      ul.actions-menu li:hover,
       ul.actions-menu li .shirt:hover {
       color: rgba(255,255,255,1);
       background: rgba(58,113,209,1);
